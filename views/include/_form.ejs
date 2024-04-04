@@ -1,0 +1,34 @@
+ <!-- form handling-->
+ <form method="POST" id="add_user" action="/api/users/create">
+        <div class="form-group" >
+            <label for="name" class="text-light" >Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" class="text-light">Email</label>
+            <input type="email" name="email" value="" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-group">
+            <label class="text-light">Gender</label>
+            <div class="radio inline">
+                <input type="radio" name="gender" value="Male">
+                <label class="text-light">Male</label>
+                <input type="radio" name="gender" value="Female">
+                <label class="text-light">Female</label>
+            </div>
+        
+        <div class="form-group">
+            <label class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" name="status" value="Active">
+                <label class="text-light">Active</label>
+                <input type="radio" name="status" value="InActive">
+                <label class="text-light">Inactive</label>
+            </div>
+        </div>
+        <div class="form-group"> 
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
